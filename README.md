@@ -1,1 +1,3 @@
-# ternura-na-cozinha
+# Ternura na cozinha
+
+O software “Ternura na Cozinha” foi concebido como um espaço dedicado ao armazenamento de receitas, proporcionando a possibilidade de organizá-las em diversas categorias. Sua funcionalidade assemelha-se à experiência de manusear um livro de receitas da vovó, que nos foi legado em seu obituário. Com esta plataforma, busca-se preservar e compartilhar não apenas receitas culinárias, mas também a memória afetuosa associada à tradição familiar na arte da gastronomia.
