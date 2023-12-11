@@ -62,8 +62,8 @@
     <div class="container">
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <h2 data-aos="fade-up">Guarde aqui as suas<br>receitas favoritas</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Crie memórias culinárias com nossas receitas autênticas. Desfrute da riqueza de sabores e aprenda técnicas que elevam suas habilidades na cozinha.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -83,8 +83,8 @@
           <div class="container" data-aos="fade-up">
     
             <div class="section-header">
-              <h2>Our Menu</h2>
-              <p>Check Our <span>Yummy Menu</span></p>
+              <h2>Menu</h2>
+              <p>Confira nosso <span>lindo Cardápio</span></p>
             </div>
     
             <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -133,8 +133,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>About Us</h2>
-          <p>Learn More <span>About Us</span></p>
+          <h2>Sobre</h2>
+          <p>Leia sobre <span>nós</span></p>
         </div>
 
         <div class="row gy-4">
@@ -147,14 +147,12 @@
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Preocupados com a volorização da culunária tradicional desenvolvemos o sistema "Ternura na Cozinha" para auxiliar os amantes da gastronomia. Temos um sistema:
               </p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
+                <li><i class="bi bi-check2-all"></i> Leve e charmoso para os usuários mais rigosos.</li>
+                <li><i class="bi bi-check2-all"></i> Além do fácil usou e confortabilidade.</li>
+                </ul>
               <p>
                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
