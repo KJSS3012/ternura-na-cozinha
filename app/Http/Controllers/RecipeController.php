@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreUpdateRecipeRequest;
-use App\Models\Recipe;
+use Illuminate\Http\Request;
 
 class RecipeController extends Controller
 {
@@ -26,10 +25,9 @@ class RecipeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreUpdateRecipeRequest $request)
+    public function store(Request $request)
     {
-        $data = $request->all();
-        Recipe::create($data);
+        //
     }
 
     /**
@@ -51,11 +49,9 @@ class RecipeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreUpdateRecipeRequest $request, string $id)
+    public function update(Request $request, string $id)
     {
-        $data = $request->all();
-        $recipe = new Recipe();
-        $recipe->update($data);
+        //
     }
 
     /**
@@ -63,7 +59,6 @@ class RecipeController extends Controller
      */
     public function destroy(string $id)
     {
-        $recipe = Recipe::find($id);
-        $recipe->destroy();
+        //
     }
 }

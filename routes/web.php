@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\RecipeController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource("/recipe", RecipeController::class);
+
 Route::get('/', function () {
-    return view('welcome');
+    $categories = Category::all();
+    return view("welcome")->with("categories", $categories);
 });
