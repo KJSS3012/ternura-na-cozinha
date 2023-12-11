@@ -45,7 +45,7 @@
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">Sobre</a></li>
           <li><a href="#chefs">Chefs</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -140,8 +140,8 @@
         <div class="row gy-4">
           <div class="col-lg-7 position-relative about-img" style="background-image: url({{asset("assets/img/about.jpg")}}) ;" data-aos="fade-up" data-aos-delay="150">
             <div class="call-us position-absolute">
-              <h4>Book a Table</h4>
-              <p>+1 5589 55488 55</p>
+              <h4>ligue para</h4>
+              <p>+55 84  9 9836 6549</p>
             </div>
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
@@ -151,11 +151,10 @@
               </p>
               <ul>
                 <li><i class="bi bi-check2-all"></i> Leve e charmoso para os usuários mais rigosos.</li>
-                <li><i class="bi bi-check2-all"></i> Além do fácil usou e confortabilidade.</li>
+                <li><i class="bi bi-check2-all"></i> facilidade no uso e confortabilidade.</li>
                 </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                O Ternura na Cozinha é um sistema para aqueles que amam o mundo da culinária e que desejam aproveitar a vida da forma mais gostosa possível.
               </p>
 
               <div class="position-relative mt-4">
@@ -227,7 +226,7 @@
 
         <div class="section-header">
           <h2>Chefs</h2>
-          <p>Our <span>Proffesional</span> Chefs</p>
+          <p>Vejas os <span>Chefs</span> Profissionais</p>
         </div>
 
         <div class="row gy-4">
@@ -244,9 +243,9 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Master Chef</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                <h4>Kaique José</h4>
+                <span>Master Chef && Developer</span>
+                <p>Sempre trabalhando duro, botando a mão na massa e no código. O verdadeiro chefe por trás desse sistema </p>
               </div>
             </div>
           </div><!-- End Chefs Member -->
@@ -263,9 +262,9 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Patissier</span>
-                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                <h4>Nicolly Morais</h4>
+                <span>Dona</span>
+                <p>A mãe da ideia de um sistema para gerenciamento de receitas. Sem ela esse projeto não teria saido do papel, ou melhor, do livro de receitas.</p>
               </div>
             </div>
           </div><!-- End Chefs Member -->
@@ -282,9 +281,9 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cook</span>
-                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                <h4>Charlon Fernandes</h4>
+                <span>Auxiliar</span>
+                <p>Todo grande chefe possue um grande auxiliar atrás, ninguém toca um restaurante sozinho. Sou aquele que dá os toques finais no prato e no pograma</p>
               </div>
             </div>
           </div><!-- End Chefs Member -->
