@@ -26,12 +26,25 @@ class StoreUpdateRecipeRequest extends FormRequest
             'ingredients' => 'required|string',
             'preparation' => 'required|string',
             'categories_id' => 'required',
-            'themes_id' => 'required',
+            'image_path' => 'required',
         ];
     }
 
     public function messages()
     {
-        return [];
+        return [
+            'title.required' => 'O campo Título é obrigatório.',
+            'title.string' => 'O campo Título deve ser uma string.',
+
+            'ingredients.required' => 'O campo Ingredientes é obrigatório.',
+            'ingredients.string' => 'O campo Ingredientes deve ser uma string.',
+
+            'preparation.required' => 'O campo Preparação é obrigatório.',
+            'preparation.string' => 'O campo Preparação deve ser uma string.',
+
+            'categories_id.required' => 'O campo Categoria é obrigatório.',
+
+            'image_path.required' => 'O campo Imagem é obrigatório.',
+        ];;
     }
 }

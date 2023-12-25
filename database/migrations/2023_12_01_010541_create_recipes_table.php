@@ -18,7 +18,8 @@ return new class extends Migration
             $table->text("ingredients");
             $table->text("preparation");
             $table->unsignedBigInteger("categories_id");
-            $table->unsignedBigInteger("themes_id");
+            $table->unsignedBigInteger("themes_id")->nullable();
+            $table->string("image_path");
 
             $table->foreign('categories_id')->references('id')->on('categories');
             $table->foreign('themes_id')->references('id')->on('themes');

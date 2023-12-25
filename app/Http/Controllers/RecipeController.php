@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreUpdateRecipeRequest;
+use App\Models\Category;
+use App\Models\Recipe;
+use App\Models\Theme;
 use Illuminate\Http\Request;
 
 class RecipeController extends Controller
@@ -19,15 +23,31 @@ class RecipeController extends Controller
      */
     public function create()
     {
-        //
+        return view("recipe.create", [
+            "categories" => Category::all(),
+            "themes" => Theme::all(),
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreUpdateRecipeRequest $request)
     {
-        //
+        $recipe = new Recipe();
+        $recipe->title = $request->title;
+        $recipe->preparation = $request->preparation;
+        $recipe->ingredients = $request->ingredients;
+        $recipe->categories_id = $request->categories_id;
+
+        $path = $request->file("image_path")->storeAs('imgRecipes', $this->makeName($request->title), 'public');
+        $recipe->image_path = $path;
+
+        if ($request->themes_id != 0) {
+            $recipe->themes_id = $request->themes_id;
+        }
+
+        $recipe->save();
     }
 
     /**
@@ -60,5 +80,12 @@ class RecipeController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    function makeName($name)
+    {
+        $newName = str_replace([' ', '/'], ['_', '_'], $name);
+        $newName = uniqid() . '_' . $newName;
+        return $newName;
     }
 }
