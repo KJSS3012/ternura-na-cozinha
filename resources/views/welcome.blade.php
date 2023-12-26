@@ -64,7 +64,7 @@
               @if($recipe->categories_id == $category->id)
                 <div class="col-lg-4 menu-item">
                   <a href="{{asset('storage'.'/'.$recipe->image_path)}}" class="glightbox"><img src="{{asset('storage'.'/'.$recipe->image_path)}}" class="menu-img img-fluid" alt=""></a>
-                  <h4>{{$recipe->title}}</h4>
+                  <h4><a href="{{route("recipe.show",["recipe"=>$recipe->id])}}">{{$recipe->title}}</a></h4>
                   <p class="ingredients">
                     {{$recipe->ingredients}}
                   </p>

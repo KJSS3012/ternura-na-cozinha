@@ -55,7 +55,14 @@ class RecipeController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $recipe =  Recipe::find($id);
+        $categories = Category::all();
+        $themes = Theme::all();
+        return view("recipe.show", [
+            "recipe" => $recipe,
+            "categories" => $categories,
+            "themes" => $themes,
+        ]);
     }
 
     /**
