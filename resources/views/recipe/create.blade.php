@@ -18,7 +18,7 @@
                         <div class="col-lg-4 reservation-img" style="background-image: url({{asset("assets/img/reservation.jpg")}});" data-aos="zoom-out" data-aos-delay="200"></div>
 
                         <div class="col d-flex align-items-center reservation-form-bg">
-                            <form action="{{ route("recipe.store") }}" method="POST" enctype="multipart/form-data"role="form" class="php-email-form w-100" data-aos="fade-up" data-aos-delay="100"accept=".png, .jpg, .jpeg">
+                            <form action="{{ route("recipe.store") }}" method="POST" enctype="multipart/form-data"role="form" class="php-email-form w-100" data-aos="fade-up" data-aos-delay="100" accept=".png, .jpg, .jpeg">
                                 @csrf
                                 <div class="row">
                                     <div class="col">
@@ -79,7 +79,7 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <input class="form-control" type="file" id="formFile" name="image_path" required>
+                                    <input class="form-control" type="file" id="formFile" name="image_path" required accept=".png, .jpg, .jpeg">
                                 </div>
 
                                 <div class="mb-3">

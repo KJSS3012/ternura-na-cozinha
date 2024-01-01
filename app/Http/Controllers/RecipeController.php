@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Recipe;
 use App\Models\Theme;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class RecipeController extends Controller
 {
@@ -48,6 +49,8 @@ class RecipeController extends Controller
         }
 
         $recipe->save();
+
+        return response()->json(['status' => 'success']);
     }
 
     /**
@@ -76,9 +79,33 @@ class RecipeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(StoreUpdateRecipeRequest $request, string $id)
     {
-        //
+
+        $recipe = Recipe::find($id);
+
+        $recipe->title = $request->title;
+        $recipe->preparation = $request->preparation;
+        $recipe->ingredients = $request->ingredients;
+        $recipe->categories_id = $request->categories_id;
+
+        // Verificar se há um arquivo de imagem no formulário
+        if ($request->hasFile("image_path")) {
+            // Remover a imagem anterior se existir
+            if ($recipe->image_path) {
+                Storage::disk('public')->delete($recipe->image_path);
+            }
+
+            // Armazenar a nova imagem
+            $path = $request->file("image_path")->storeAs('imgRecipes', $this->makeName($request->title), 'public');
+            $recipe->image_path = $path;
+        }
+
+        $recipe->themes_id = $request->themes_id ?: null;
+
+        $recipe->save();
+
+        return response()->json(['status' => 'success']);
     }
 
     /**
