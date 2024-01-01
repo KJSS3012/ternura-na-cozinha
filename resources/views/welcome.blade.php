@@ -38,7 +38,20 @@
         <p>Confira nosso <span>lindo Cardápio</span></p>
       </div>
 
-      <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+      
+	      <form action="{{route('recipe.index')}}" class="form-group">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <input class="form-control" type="text" placeholder="Pesquisar..." style="width: 150px; margin-left: -20px" name="search">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-danger"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+	      <form>
+      
+
+      <ul class="nav nav-tabs d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="200">
 
         @foreach($categories as $category)
         <li class="nav-item">

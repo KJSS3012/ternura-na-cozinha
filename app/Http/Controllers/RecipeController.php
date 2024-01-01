@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Recipe;
 use App\Models\Theme;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class RecipeController extends Controller
@@ -14,9 +15,17 @@ class RecipeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $search = $request['search'] ?? "";
+
+        if($search != ""){
+            $recipe = DB::table('recipes')->where('title','like','%'.$search.'%')->get();
+        } else {
+						// não sei oq retornar
+			}
+   
+        return view('result', ['recipes' => $recipe, 'search' => $search]);
     }
 
     /**
